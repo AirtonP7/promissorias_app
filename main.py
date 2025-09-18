@@ -9,7 +9,7 @@ from app.falar_desenvolvedor.contato_dev import render
 # ===============================
 st.set_page_config(
     page_title="GrupoMax | Gerador de Documentos",
-    page_icon="app/assets/images/DH.png",
+    page_icon="app/assets/images/dh.png",
     layout="wide"
 )
 
@@ -62,7 +62,7 @@ div[role="radiogroup"] > label[data-selected="true"] {
 # ===============================
 def sidebar_menu():
     logo1_path = os.path.join("app", "assets", "images", "logo.png")
-    logo2_path = os.path.join("app", "assets", "images", "DH.png")
+    logo2_path = os.path.join("app", "assets", "images", "dh.png")
 
     col1, col2 = st.columns(2)
     with col1:
