@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # ===============================
-# CSS para esconder menu, header e rodapé
+# CSS para esconder menu, header, rodapé e ícones do Streamlit Cloud
 # ===============================
 hide_streamlit_style = """
     <style>
@@ -27,11 +27,12 @@ hide_streamlit_style = """
     
     /* Esconde o header do Streamlit */
     header {visibility: hidden !important; display: none !important;}
+    
+    /* Esconde os ícones do rodapé (Streamlit Cloud) */
+    div[data-testid="stStatusWidget"] {display: none !important;}
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
-
 
 # ===============================
 # CSS Customizado
