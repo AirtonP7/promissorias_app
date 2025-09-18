@@ -4,6 +4,16 @@ from app.generator.promissorias_app import gerar_promissoria_app
 from app.generator.contrato_app import gerar_contrato_app
 from app.falar_desenvolvedor.contato_dev import render
 
+
+# ===============================
+# Configuração da Página
+# ===============================
+st.set_page_config(
+    page_title="GrupoMax | Gerador de Documentos",
+    page_icon="app/assets/images/dh.png",
+    layout="wide"
+)
+
 # Remove barra lateral, menu hamburger e rodapé do Streamlit
 st.set_page_config(page_title="Gerador de Promissórias", layout="wide")
 
@@ -17,14 +27,6 @@ hide_streamlit_style = """
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-# ===============================
-# Configuração da Página
-# ===============================
-st.set_page_config(
-    page_title="GrupoMax | Gerador de Documentos",
-    page_icon="app/assets/images/dh.png",
-    layout="wide"
-)
 
 # ===============================
 # CSS Customizado
