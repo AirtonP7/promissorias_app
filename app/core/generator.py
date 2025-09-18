@@ -1,23 +1,23 @@
 from datetime import timedelta, date
-import locale
 from num2words import num2words
-
-# Ajustar locale para datas em português
-try:
-    locale.setlocale(locale.LC_TIME, "pt_BR.UTF-8")
-except:
-    locale.setlocale(locale.LC_TIME, "Portuguese_Brazil.1252")
 
 # ---------------------------
 # Funções auxiliares
 # ---------------------------
 def formatar_reais(valor: float) -> str:
+    """Formata o valor como moeda brasileira."""
     return f"R$ {valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 def data_extenso(d: date) -> str:
-    return d.strftime("%d de %B de %Y")
+    """Retorna a data por extenso em português (manual, sem depender de locale)."""
+    meses = [
+        "janeiro", "fevereiro", "março", "abril", "maio", "junho",
+        "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
+    ]
+    return f"{d.day:02d} de {meses[d.month - 1]} de {d.year}"
 
 def valor_por_extenso(valor: float) -> str:
+    """Retorna o valor por extenso em maiúsculas."""
     inteiro = int(valor)
     centavos = int(round((valor - inteiro) * 100))
 

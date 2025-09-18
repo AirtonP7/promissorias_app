@@ -5,20 +5,6 @@ from app.export.pdf_exporter import export_promissorias_pdf
 from app.core.utils import formatar_cpf, formatar_cnpj, format_currency
 import time
 
-# ---------------------------
-# Funções auxiliares
-# ---------------------------
-#def formatar_cnpj(cnpj: str) -> str:
-    #numeros = "".join(filter(str.isdigit, cnpj))
-    #if len(numeros) != 14:
-        #return cnpj
-    #return f"{numeros[:2]}.{numeros[2:5]}.{numeros[5:8]}/{numeros[8:12]}-{numeros[12:]}"
-
-#def formatar_cpf(cpf: str) -> str:
-    #numeros = "".join(filter(str.isdigit, cpf))
-    #if len(numeros) != 11:
-        #return cpf
-    #return f"{numeros[:3]}.{numeros[3:6]}.{numeros[6:9]}-{numeros[9:]}"
 
 # ---------------------------
 # Limpar campos do formulário
