@@ -1,0 +1,18 @@
+# -------------------------------------------
+# 📦 Dependências do Gerador de Promissórias
+# -------------------------------------------
+
+# Framework principal da interface
+streamlit==1.38.0
+
+# Manipulação e geração de PDFs
+reportlab==4.2.5
+
+# Conversão de números para extenso em português
+num2words==0.5.13
+
+# Datas e utilitários (internacionalização de datas)
+python-dateutil==2.9.0.post0
+
+# Manipulação de imagens (ex: logos em PDFs)
+Pillow==10.4.0

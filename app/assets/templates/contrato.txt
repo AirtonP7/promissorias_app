@@ -1,0 +1,39 @@
+CONTRATO PARTICULAR DE EMPRÉSTIMO DE DINHEIRO
+
+Pelo presente contrato particular de empréstimo de dinheiro, de um lado,
+{nome_empresa}, inscrito no CNPJ nº {cnpj_empresa}, de ora em diante denominado simplesmente CREDOR,
+e, de outro lado, {nome_devedor}, inscrito no CPF ou CNPJ nº {cpf_devedor}, de ora em diante denominado simplesmente DEVEDOR,
+têm justo e contratado o seguinte:
+
+CLÁUSULA 1ª
+O CREDOR dá como empréstimo ao DEVEDOR a quantia de R$ {valor_total:,.2f} ({valor_total_extenso}), mediante as condições seguintes.
+
+CLÁUSULA 2ª
+Que a quantia acima emprestada foi paga em espécie ao DEVEDOR, e que o mesmo pagará o valor do empréstimo conforme condições estabelecidas em contrato,
+representadas em {num_parcelas} ( {num_parcelas_extenso} ) Notas Promissórias no valor montante do empréstimo,
+assinadas pelo DEVEDOR, com os seguintes vencimentos:
+
+{tabela_parcelas}
+
+como forma de garantia.
+
+CLÁUSULA 3ª
+Na falta do pagamento do empréstimo dentro do prazo e data, o CREDOR poderá executar a dívida através do protesto da Nota Promissória e cobrança judicial.
+
+CLÁUSULA 4ª
+Todos os encargos que venham a recair durante o período de pagamento do empréstimo serão de responsabilidade do DEVEDOR.
+
+CLÁUSULA 5ª
+Fica eleito o foro da cidade de Fortaleza/CE, para dirimir qualquer dúvida referente a este contrato.
+
+E, por estarem plenamente de acordo, assinam o presente contrato em duas vias de igual teor.
+
+Fortaleza, {data_contrato}.
+
+CREDOR ___________________________________
+
+DEVEDOR __________________________________
+
+TESTEMUNHA _______________________________
+
+TESTEMUNHA _______________________________

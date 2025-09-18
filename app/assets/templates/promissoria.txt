@@ -1,0 +1,1 @@
+Eu {nome_devedor}, me comprometo na seguinte data, {vencimento_extenso} a pagar por esta única via de NOTA PROMISSÓRIA, à {nome_empresa} – CNPJ: {cnpj_empresa} ou à sua ordem, a quantia de: {valor_parcela_extenso} em moeda corrente nacional, referente à EMPRESTIMO.
