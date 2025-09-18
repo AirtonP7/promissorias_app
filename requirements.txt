@@ -16,3 +16,6 @@ python-dateutil==2.9.0.post0
 
 # Manipulação de imagens (ex: logos em PDFs)
 Pillow==10.4.0
+
+# Gerenciamento de variáveis de ambiente (ex: .env)
+python-dotenv==1.0.1
