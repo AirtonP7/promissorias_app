@@ -14,15 +14,23 @@ st.set_page_config(
     layout="wide"
 )
 
-# CSS para esconder menu e rodapé
+# ===============================
+# CSS para esconder menu, header e rodapé
+# ===============================
 hide_streamlit_style = """
     <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
+    /* Esconde o menu hamburger do Streamlit */
+    #MainMenu {visibility: hidden !important; display: none !important;}
+    
+    /* Esconde o rodapé padrão "Made with Streamlit" */
+    footer {visibility: hidden !important; display: none !important;}
+    
+    /* Esconde o header do Streamlit */
+    header {visibility: hidden !important; display: none !important;}
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 
 # ===============================
