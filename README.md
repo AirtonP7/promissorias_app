@@ -9,7 +9,6 @@
 
 ## ✨ Visão Geral
 
-<div style="background-color:#E8F6F3; padding: 15px; border-radius: 8px;">
 O **Gerador de Promissórias & Contratos** é uma aplicação **profissional** desenvolvida em **Python + Streamlit** que automatiza a criação de promissórias parceladas e contratos personalizados em PDF.
 
 💎 **Benefícios:**  
