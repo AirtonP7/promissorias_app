@@ -15,24 +15,30 @@ st.set_page_config(
 )
 
 # ===============================
-# CSS para esconder menu, header, rodapé e ícones do Streamlit Cloud
+# CSS para esconder elementos padrão do Streamlit (modo "app limpo")
 # ===============================
 hide_streamlit_style = """
     <style>
-    /* Esconde o menu hamburger do Streamlit */
+    /* Esconde o menu hamburger */
     #MainMenu {visibility: hidden !important; display: none !important;}
-    
+
     /* Esconde o rodapé padrão "Made with Streamlit" */
     footer {visibility: hidden !important; display: none !important;}
-    
+
     /* Esconde o header do Streamlit */
     header {visibility: hidden !important; display: none !important;}
-    
-    /* Esconde os ícones do rodapé (Streamlit Cloud) */
+
+    /* Esconde ícones de status no canto inferior direito */
     div[data-testid="stStatusWidget"] {display: none !important;}
+    div[data-testid="stDecoration"] {display: none !important;}
+
+    /* Esconde o botão "Manage app" do Streamlit Cloud */
+    div[data-testid="stActionButton"] {display: none !important;}
+    div[title="Manage app"] {display: none !important;}
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 # ===============================
 # CSS Customizado
