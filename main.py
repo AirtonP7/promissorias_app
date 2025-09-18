@@ -14,9 +14,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# Remove barra lateral, menu hamburger e rodapé do Streamlit
-st.set_page_config(page_title="Gerador de Promissórias", layout="wide")
-
 # CSS para esconder menu e rodapé
 hide_streamlit_style = """
     <style>
