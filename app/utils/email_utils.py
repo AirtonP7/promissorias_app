@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 # Carrega variáveis do .env
 load_dotenv()
 
-SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
-SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
-EMAIL_ORIGEM = os.getenv("EMAIL_ORIGEM", "seuemail@gmail.com")
-SENHA_EMAIL = os.getenv("SENHA_EMAIL", "")
+SMTP_SERVER = st.secrets["SMTP_SERVER"]
+SMTP_PORT = st.secrets["SMTP_PORT"]
+EMAIL_ORIGEM = st.secrets["EMAIL_ORIGEM"]
+SENHA_EMAIL = st.secrets["SENHA_EMAIL"]
 
 def enviar_email_feedback(destinatario, assunto, corpo_mensagem):
     try:
