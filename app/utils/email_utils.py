@@ -1,19 +1,16 @@
-
-
 import smtplib
-import os
 from email.message import EmailMessage
-from dotenv import load_dotenv
+import streamlit as st  # necessário para usar st.secrets
 
-# Carrega variáveis do .env
-load_dotenv()
-
+# ----------------------------
+# Configuração usando Secrets
+# ----------------------------
 SMTP_SERVER = st.secrets["SMTP_SERVER"]
-SMTP_PORT = st.secrets["SMTP_PORT"]
+SMTP_PORT = int(st.secrets["SMTP_PORT"])  # converte para inteiro
 EMAIL_ORIGEM = st.secrets["EMAIL_ORIGEM"]
 SENHA_EMAIL = st.secrets["SENHA_EMAIL"]
 
-def enviar_email_feedback(destinatario, assunto, corpo_mensagem):
+def enviar_email_feedback(destinatario: str, assunto: str, corpo_mensagem: str) -> bool:
     try:
         msg = EmailMessage()
         msg["Subject"] = assunto
